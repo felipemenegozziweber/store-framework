@@ -22,17 +22,17 @@
 .infoCardContainer--vintage {
     background-color: #EDCFD1;
     max-width: 1260px;
-  }
+}
 
-  .infoCardContainer--metal {
+.infoCardContainer--metal {
     max-width: 1260px;
     background-color: #e1e1e1;
-  }
+}
 
-  .infoCardHeadline--vintage {
+ .infoCardHeadline--vintage {
       color:black;
-  }
+}
 
-  .infoCardHeadline--metal {
+.infoCardHeadline--metal {
     color:black;
 }
