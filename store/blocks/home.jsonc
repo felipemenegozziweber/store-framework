@@ -4,7 +4,6 @@
       "info-card#button-right",
       "info-card#button-left",
       "flex-layout.row",
-      "flex-layout.col",
       "shelf"
     ]
   },
@@ -35,20 +34,14 @@
       "textAlignment": "left",
       "blockClass": "metal"
     }
-  },
-  "flex-layout.row":{
+  }, "flex-layout.row":{
     "children": [
       "info-card",
       "flex-layout.col"
     ]
   },
-  "flex-layout.col":{
-    "children": [
-      "image#electronics",
-      "image#major-appliance"
-    ]
-  },
-  "info-card#rethink": {
+  
+ "info-card#rethink": {
     "props": {
       "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
       "isFullModeStyle": true,
@@ -57,10 +50,16 @@
       "textPosition": "center"
     }
   },
+  
   "rich-text#deletar": {
     "props": {
       "text": "I'll be deleted soon"
     }
+  }, "flex-layout.col":{
+    "children": [
+      "image#electronics",
+      "image#major-appliance"
+    ]
   },
   "image#electronics": {
     "props": {
@@ -72,22 +71,6 @@
     "props": {
       "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
       "maxWidth": "100%"
-    }
-  },
-  "shelf": {
-    "blocks": ["product-summary.shelf"],
-    "props": {
-      "category": 1,
-      "orderBy": "OrderByTopSaleDESC",
-      "paginationDotsVisibility": "desktopOnly",
-      "productList": {
-        "maxItems": 8,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 1,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "titleText": "Top sellers"
-      }
     }
   }
 }
